@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap");
+
+body{
+  overflow:hidden;
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main{
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav{
+    width: 100%;
+    background-color: rgb(32, 2, 81);
+    text-align: center;
+    padding: 25px 0;
+    
+}
+
+
+nav a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+
+.container{
+    display: flex;
+    background-color: rgb(37, 2, 75);
+    color: white;
+    flex-wrap: wrap;
+    margin: 2rem;
+    background: linear-gradient(-45deg, #3a015c, #00456d);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+
+
+.container-form{
+    background-color: #fafafa;
+    border: 1px solid black;
+    width: 400px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+.form label{
+    color: #000000;
+}
+
+.form input{
+    width: 100%;
+    border: 1px solid #a7a7a7;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.form textarea{
+    border: 1px solid #a7a7a7;;
+  width: 100%;
+}
+
+
+.form button{
+    width: 100%;
+    padding: .5rem 2rem;
+    border: none;
+    background-color: #3a015c;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.form button:hover{
+  background-color: #31014d;
+}
+
+
+.container-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+.logos-contact{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logos-contact img{
+  width: 2rem;
+}
+
+.logos-contact img:hover{
+  transform: scale(1.2);
+  transition: all 300ms ease;
+}
+
+
+
+@media (max-width: 825px) {
+ .container{
+  margin: 0;
+  width: 80%;
+  justify-content: center;
+  padding-bottom: 2rem;
+ }
+ .form{
+  width: 100%;
+ }
+}
+
+
+@media (max-width: 600px){
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+}
